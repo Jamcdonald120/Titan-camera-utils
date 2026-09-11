@@ -12,7 +12,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.resources.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.lwjgl.glfw.GLFW;
+import org.lwjgl.sdl.SDLScancode;
 
 @Environment(EnvType.CLIENT)
 public class CameraUtils implements ClientModInitializer {
@@ -47,9 +47,9 @@ public class CameraUtils implements ClientModInitializer {
         CATEGORY_CAMERAUTILS = KeyMapping.Category.register(Identifier.fromNamespaceAndPath(MODID, "camerautils"));
         CATEGORY_CAMERAUTILS_SETTINGS = KeyMapping.Category.register(Identifier.fromNamespaceAndPath(MODID, "camerautils_settings"));
 
-        ZOOM = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.zoom", GLFW.GLFW_KEY_Z, CATEGORY_CAMERAUTILS));
-        THIRD_PERSON_CAM_1 = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.third_person_cam_1", GLFW.GLFW_KEY_F6, CATEGORY_CAMERAUTILS));
-        THIRD_PERSON_CAM_2 = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.third_person_cam_2", GLFW.GLFW_KEY_F7, CATEGORY_CAMERAUTILS));
+        ZOOM = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.zoom", SDLScancode.SDL_SCANCODE_Z, CATEGORY_CAMERAUTILS));
+        THIRD_PERSON_CAM_1 = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.third_person_cam_1", SDLScancode.SDL_SCANCODE_F6, CATEGORY_CAMERAUTILS));
+        THIRD_PERSON_CAM_2 = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.third_person_cam_2", SDLScancode.SDL_SCANCODE_F7, CATEGORY_CAMERAUTILS));
         THIRD_PERSON_OFFSET = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.third_person_offset", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS));
         DETACH_CAMERA = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.detach_camera", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS));
         ZOOM_ANIMATION = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.zoom_animation", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS));
