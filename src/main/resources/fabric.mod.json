@@ -2,10 +2,11 @@
   "schemaVersion": 1,
   "id": "camerautils",
   "version": "${mod_version}",
-  "name": "Camera Utils",
-  "description": "Camera Utils",
+  "name": "Titan Camera Utils",
+  "description": "Titan Camera Utils",
   "authors": [
-    "Max Henkel"
+    "Max Henkel",
+	"Jamcdonald"
   ],
   "contact": {
     "homepage": "https://modrepo.de/minecraft/camerautils/overview",

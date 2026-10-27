@@ -11,14 +11,12 @@
 
 <!-- modrinth_exclude.end -->
 
-Camera Utils is a client side Fabric mod that adds convenient features related to the players camera.
+Titan Camera Utils stripped down version of Camera Utils that removes clipping cameras leaving only zoom and detachable camera
 
 # Features
 
 - Dynamic zoom
 - Camera detaching
-- Adjustable third person distance
-- Two customizable third person perspectives
 - Advanced cinematic camera controls
 - Movement smoothing
 
@@ -37,19 +35,6 @@ By pressing `RIGHT ALT` in combination with the detach camera key, the camera go
 
 ![](https://media.giphy.com/media/NCHDu1S4XB8Bpee2j5/giphy.gif)
 
-## Adjustable Third Person Distance
-
-When holding the third person distance modifier in third person, you are able to scroll out up to 100 blocks away from the player.
-
-![](https://media.giphy.com/media/3mILufImnwZzagKkMa/giphy.gif)
-
-## Customizable Third Person Perspectives
-
-This mod allows for two custom third person perspectives.
-These are bound to `F6` and `F7` by default.
-These can be modified by pressing `RIGHT ALT` and `F6` or `F7` respectively.
-
-![](https://media.giphy.com/media/2pM70RylJyXvhuVj4R/giphy.gif)
 
 ## Advanced Cinematic Camera Controls
 
@@ -61,4 +46,4 @@ Pressing any key related to the camera utils mod in combination with `RIGHT ALT`
 will open a settings GUI which allows you to change properties
 or to reset them back to their default values.
 
-Note that this mod is **not compatible with OptiFine**.
+Note that this mod is **not compatible with OptiFine** (but hey, even Optifine isnt compatible with optifine these days).

@@ -14,20 +14,6 @@ public class ClientConfig {
     public final ConfigEntry<Double> cinematicCameraModifier;
     public final ConfigEntry<Double> zoom;
     public final ConfigEntry<Double> zoomSensitivity;
-    public final ConfigEntry<Double> thirdPersonOffset;
-    public final ConfigEntry<Double> thirdPersonOffsetSensitivity;
-    public final ConfigEntry<Double> thirdPersonOffsetX1;
-    public final ConfigEntry<Double> thirdPersonOffsetY1;
-    public final ConfigEntry<Double> thirdPersonOffsetZ1;
-    public final ConfigEntry<Double> thirdPersonRotationX1;
-    public final ConfigEntry<Boolean> thirdPersonInverted1;
-    public final ConfigEntry<Boolean> thirdPersonHideGui1;
-    public final ConfigEntry<Double> thirdPersonOffsetX2;
-    public final ConfigEntry<Double> thirdPersonOffsetY2;
-    public final ConfigEntry<Double> thirdPersonOffsetZ2;
-    public final ConfigEntry<Double> thirdPersonRotationX2;
-    public final ConfigEntry<Boolean> thirdPersonInverted2;
-    public final ConfigEntry<Boolean> thirdPersonHideGui2;
     public final ConfigEntry<ModifierKey> modifierKey;
     public final ConfigEntry<Double> guiOpacity;
     public final ConfigEntry<Double> zoomAnimationFrom;
@@ -48,20 +34,6 @@ public class ClientConfig {
         cinematicCameraModifier = builder.doubleEntry("cinematic_camera_modifier", 1D, 0D, 1D);
         zoom = builder.doubleEntry("zoom", 0.1D, 0D, 2D);
         zoomSensitivity = builder.doubleEntry("zoom_sensitivity", 0.01D, 0.001D, 1D);
-        thirdPersonOffset = builder.doubleEntry("third_person_offset", 0D, -32D, 32D);
-        thirdPersonOffsetSensitivity = builder.doubleEntry("third_person_offset_sensitivity", 0.1D, 0.001D, 1D);
-        thirdPersonOffsetX1 = builder.doubleEntry("third_person_cam_1_offset_x", -4D, -100D, 100D);
-        thirdPersonOffsetY1 = builder.doubleEntry("third_person_cam_1_offset_y", 0D, -100D, 100D);
-        thirdPersonOffsetZ1 = builder.doubleEntry("third_person_cam_1_offset_z", 0D, -100D, 100D);
-        thirdPersonInverted1 = builder.booleanEntry("third_person_cam_1_inverted", false);
-        thirdPersonHideGui1 = builder.booleanEntry("third_person_cam_1_hide_gui", false);
-        thirdPersonRotationX1 = builder.doubleEntry("third_person_cam_1_rotation_x", 0D, -90D, 90D);
-        thirdPersonOffsetX2 = builder.doubleEntry("third_person_cam_2_offset_x", -4D, -100D, 100D);
-        thirdPersonOffsetY2 = builder.doubleEntry("third_person_cam_2_offset_y", 0D, -100D, 100D);
-        thirdPersonOffsetZ2 = builder.doubleEntry("third_person_cam_2_offset_z", 0D, -100D, 100D);
-        thirdPersonInverted2 = builder.booleanEntry("third_person_cam_2_inverted", false);
-        thirdPersonHideGui2 = builder.booleanEntry("third_person_cam_2_hide_gui", false);
-        thirdPersonRotationX2 = builder.doubleEntry("third_person_cam_2_rotation_x", 0D, -90D, 90D);
         modifierKey = builder.enumEntry(
                 "modifier_key",
                 ModifierKey.RIGHT_ALT,

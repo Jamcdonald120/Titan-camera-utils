@@ -27,16 +27,10 @@ public class CameraUtils implements ClientModInitializer {
     public static KeyMapping.Category CATEGORY_CAMERAUTILS_SETTINGS;
 
     public static KeyMapping ZOOM;
-    public static KeyMapping THIRD_PERSON_CAM_1;
-    public static KeyMapping THIRD_PERSON_CAM_2;
-    public static KeyMapping THIRD_PERSON_OFFSET;
     public static KeyMapping DETACH_CAMERA;
     public static KeyMapping ZOOM_ANIMATION;
 
     public static KeyMapping CINEMATIC_CAMERA_GUI;
-    public static KeyMapping THIRD_PERSON_CAMERA_1_GUI;
-    public static KeyMapping THIRD_PERSON_CAMERA_2_GUI;
-    public static KeyMapping THIRD_PERSON_GUI;
     public static KeyMapping ZOOM_GUI;
     public static KeyMapping ZOOM_ANIMATION_GUI;
 
@@ -47,19 +41,15 @@ public class CameraUtils implements ClientModInitializer {
         CATEGORY_CAMERAUTILS = KeyMapping.Category.register(Identifier.fromNamespaceAndPath(MODID, "camerautils"));
         CATEGORY_CAMERAUTILS_SETTINGS = KeyMapping.Category.register(Identifier.fromNamespaceAndPath(MODID, "camerautils_settings"));
 
+
         ZOOM = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.zoom", SDLScancode.SDL_SCANCODE_Z, CATEGORY_CAMERAUTILS));
-        THIRD_PERSON_CAM_1 = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.third_person_cam_1", SDLScancode.SDL_SCANCODE_F6, CATEGORY_CAMERAUTILS));
-        THIRD_PERSON_CAM_2 = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.third_person_cam_2", SDLScancode.SDL_SCANCODE_F7, CATEGORY_CAMERAUTILS));
-        THIRD_PERSON_OFFSET = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.third_person_offset", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS));
         DETACH_CAMERA = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.detach_camera", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS));
         ZOOM_ANIMATION = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.zoom_animation", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS));
 
         CINEMATIC_CAMERA_GUI = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.cinematic_camera_settings", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS_SETTINGS));
-        THIRD_PERSON_CAMERA_1_GUI = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.third_person_camera_1_settings", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS_SETTINGS));
-        THIRD_PERSON_CAMERA_2_GUI = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.third_person_camera_2_settings", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS_SETTINGS));
-        THIRD_PERSON_GUI = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.third_person_settings", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS_SETTINGS));
         ZOOM_GUI = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.zoom_settings", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS_SETTINGS));
         ZOOM_ANIMATION_GUI = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.zoom_animation_settings", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS_SETTINGS));
+
 
         Minecraft mc = Minecraft.getInstance();
         CLIENT_CONFIG = ConfigBuilder
