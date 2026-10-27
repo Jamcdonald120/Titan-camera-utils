@@ -47,9 +47,6 @@ public class CameraUtils implements ClientModInitializer {
         ZOOM_ANIMATION = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.zoom_animation", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS));
 
         CINEMATIC_CAMERA_GUI = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.cinematic_camera_settings", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS_SETTINGS));
-        THIRD_PERSON_CAMERA_1_GUI = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.third_person_camera_1_settings", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS_SETTINGS));
-        THIRD_PERSON_CAMERA_2_GUI = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.third_person_camera_2_settings", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS_SETTINGS));
-        THIRD_PERSON_GUI = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.third_person_settings", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS_SETTINGS));
         ZOOM_GUI = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.zoom_settings", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS_SETTINGS));
         ZOOM_ANIMATION_GUI = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.camerautils.zoom_animation_settings", InputConstants.UNKNOWN.getValue(), CATEGORY_CAMERAUTILS_SETTINGS));
 
